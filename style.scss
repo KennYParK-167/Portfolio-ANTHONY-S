@@ -329,10 +329,11 @@ body {
     flex-wrap: wrap;
 
     @media screen and (max-width: 1200px) {
-      gap: 10px;
-      row-gap: 10px;
-      width: 90vw;
-      margin-left: 25px;
+      gap: 5px;
+      row-gap: 15px;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
     }
 
     .box {
