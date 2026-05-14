@@ -451,7 +451,7 @@ body {
       width: 40px;
 
       @media  screen and (max-width: 1200px) {
-        width: 15px;
+        width: 20px;
       }
     }
 
@@ -669,11 +669,11 @@ body {
   }
 
   padding-bottom: 200px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 
   @media  screen and (max-width: 1200px) {
     padding-bottom: 40px;
-    margin-bottom: 300px;
+    margin-bottom: 60px;
   }
 }
 
@@ -682,5 +682,123 @@ hr {
 
   @media  screen and (max-width: 1200px) {
     display: none;
+  }
+}
+
+
+// PROJETS
+.prrojets-contenu {
+  justify-items: center;
+  width: 100%;
+
+  .h1 {
+    font-family: 'header';
+    color: var(--pacific-blue);
+    font-size: 90px;
+    margin-bottom: 120px;
+
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: cover 0% cover 30%;
+
+    @media  screen and (max-width: 1200px) {
+      font-size: 35px;
+      margin-bottom: 30px;
+      margin-top: 140px;
+    }
+  }
+
+  .projets {
+    width: 1200px;
+
+    @media  screen and (max-width: 1200px) {
+      width: 100vw;
+      justify-items: center;
+    }
+
+    .card-pro {
+      border: solid 1px #ffffff24;
+      border-radius: 20px;
+      padding: 10px;
+      margin-bottom: 40px;
+      width: 1200px;
+      // SCROLL ANIMATION
+      animation: scroll linear;
+      animation-timeline: view();
+      animation-range: cover 0% cover 30%;
+
+      @media  screen and (max-width: 1200px) {
+        width: 90vw;
+        padding: 5px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+      
+      .id {
+        font-size: 28px;
+        margin-left: 5px;
+        color: #ffffff54;
+
+        @media  screen and (max-width: 1200px) {
+          font-size: 12px;
+        }
+      }
+
+      h1 {
+        font-size: 54px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        font-family: 'header';
+        color: var(--powder-blue);
+        margin-left: 20px;
+
+        @media  screen and (max-width: 1200px) {
+          font-size: 18px;
+        }
+      }
+
+      p {
+        font-size: 25px;
+        width: 90%;
+        margin-left: 20px;
+
+        @media  screen and (max-width: 1200px) {
+          font-size: 12px;
+        }
+
+        em {
+          opacity: 0.4;
+        }
+      }
+
+      .statut {
+        color: #ffffff54;
+        
+        a {
+          color: #1c5d99;
+          text-decoration: none;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .hr {
+        opacity: 0.15;
+
+        @media  screen and (max-width: 1200px) {
+          display: block;
+        }
+      }
+
+      img {
+        width: 1200px;
+        border-radius: 10px;
+
+        @media  screen and (max-width: 1200px) {
+          width: 90vw;
+        }
+      }
+    }
   }
 }
