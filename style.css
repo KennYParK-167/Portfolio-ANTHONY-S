@@ -676,7 +676,8 @@ hr {
   font-family: "header";
   color: var(--pacific-blue);
   font-size: 90px;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
+  margin-top: 240px;
   animation: scroll linear;
   animation-timeline: view();
   animation-range: cover 0% cover 30%;
