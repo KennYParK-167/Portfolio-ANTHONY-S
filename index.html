@@ -12,11 +12,11 @@
     <section class="navbar">
       <h1>ANTHONY - S <span></span></h1>
       <nav class="nav">
-        <a href="#" class="navp">Acceuil</a>
+        <a href="#hero" class="navp">Acceuil</a>
         <a href="#About" class="navp">A propos</a>
-        <a href="#" class="navp">Competénces</a>
+        <a href="#skills" class="navp">Competénces</a>
+        <a href="#" class="navp">Parcours</a>
         <a href="#" class="navp">Projets</a>
-        <a href="#" class="navp">Tarifs</a>
         <a href="#" class="navp">Contacts</a>
       </nav>
 
@@ -27,11 +27,11 @@
     <!-- NAVBAR : MOBILE -->
     <section class="nav-mobile">
       <nav class="nav">
-        <a href="#" class="navp">Acceuil</a>
+        <a href="#hero" class="navp">Acceuil</a>
         <a href="#About" class="navp">A propos</a>
-        <a href="#" class="navp">Competénces</a>
+        <a href="#skills" class="navp">Competénces</a>
+        <a href="#" class="navp">Parcours</a>
         <a href="#" class="navp">Projets</a>
-        <a href="#" class="navp">Tarifs</a>
         <a href="#" class="navp">Contacts</a>
       </nav>
     </section>
@@ -40,7 +40,7 @@
     <section class="hero-contenu">
 
       <!-- HERO -->
-      <div class="hero">
+      <div class="hero" id="hero">
         <div class="top">
           <p>Mon nom est Anthony et je suis un aspirant devellopeur</p>
           <h1>Webdesigner</h1>
@@ -61,7 +61,7 @@
     </section>
 
     <!-- SKILLS -->
-    <section class="skills-contenu">
+    <section class="skills-contenu" id="skills">
       <h1>Compétences</h1>
       <div class="skills">
         <!-- BOX -->
@@ -100,7 +100,7 @@
           <div class="img-box">
             <img class="img" src="./assets/brand-python.svg" alt="">
             <img class="img" src="./assets/brand-debian.svg" alt="">
-            <img src="./assets/file-type-php.svg" alt="">
+            <img class="invert" src="./assets/file-type-php.svg" alt="">
           </div>
           <p>Programmation et gestion de données systeme. Je suis capable de maintenir une systeme a jour avec une geration des bases de données back-end et création IA/Bot.</p>
           <p>Generation de données</p>
@@ -111,7 +111,7 @@
           <div class="img-box">
             <img class="img" src="./assets/device-mobile-code.svg" alt="">
             <img class="img" src="./assets/circuit-capacitor.svg" alt="">
-            <img src="./assets/brand-react.svg" alt="">
+            <img class="invert" src="./assets/brand-react.svg" alt="">
           </div>
           <p>Conception d'applications mobiles performantes en utilisant l'écosystème React propulsé par Capacitor. Je maîtrise l'art de transformer des interfaces web en une application mobile.</p>
           <p>Integration mobile</p>
@@ -120,6 +120,60 @@
         <!-- BOX -->
       </div>
     </section>
+
+    <!-- PARCOURS -->
+    <section class="parcours-contenu">
+      <div class="titre">
+        <h1>Parcours</h1>
+      </div>
+      <div class="parcours">
+        <!-- LEFT -->
+        <div class="box-left">
+          <div class="haut">
+            <img class="img" src="./assets/school.svg" alt="">
+            <h1>2022 | BEPC</h1>
+          </div>
+          <p class="p">J'ai obtenu mon Brevet d’Études du Premier Cycle à l'établissement EPC (Ecole Privé Catholique) avec mention Bien.</p>
+        </div>
+        <!-- SEPARATION -->
+        <hr>
+        <!-- RIGHT -->
+        <div class="box-right">
+          <div class="haut">
+            <img class="img" src="./assets/school.svg" alt="">
+            <h1>2025 | BACCLAUREAT</h1>
+          </div>
+          <p class="p">A LPC (Lycée Privé Catholique) en série scientifique (Série D). J'ai obtneu un mention Assez-Bien avec les moyennes des matieres scientifiques +60%</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- N'2 -->
+    <section class="parcours-contenu2">
+      <div class="parcours2">
+        <!-- LEFT -->
+        <!-- N'1 -->
+        <div class="box-left2">
+          <div class="haut2">
+            <img class="img" src="./assets/blockquote.svg" alt="">
+            <h1>2025 | AUTODIDACTIE</h1>
+          </div>
+          <p class="p">Je me suis initiatier aux technologies fondamentales du web à travers la réalisation de mes premières maquettes en HTML et CSS.</p>
+        </div>
+        <!-- SEPARATION -->
+        <hr>
+        <!-- RIGHT -->
+        <div class="box-right2">
+          <div class="haut2">
+            <img class="img" src="./assets/school.svg" alt="">
+            <h1>2026 - Present | LICENCE (En cours)</h1>
+          </div>
+          <p class="p">Aspirant a l'obtention du Licence en Genie Logiciel et Bases de données a l'INSI</p>
+        </div>
+      </div>
+    </section>
+
+
 
     <!-- SCRIPT -->
     <script src="script.js"></script>
