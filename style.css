@@ -438,7 +438,7 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .parcours-contenu .parcours .img {
-    width: 15px;
+    width: 20px;
   }
 }
 .parcours-contenu .parcours .box-left {
