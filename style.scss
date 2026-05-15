@@ -184,6 +184,8 @@ body {
 
   .top {
     justify-items: center;
+    display: grid;
+    text-align: center;
 
     p {
       margin-bottom: -80px;
@@ -207,9 +209,10 @@ body {
       }
     }
     h1:nth-child(3) {
+      display: block;
       font-size: 200px;
       color: var(--pacific-blue);
-      z-index: -1;
+      // z-index: -1;
 
       @media screen and (max-width: 1200px) {
         font-size: 50px;
@@ -310,6 +313,7 @@ body {
   animation-timeline: view();
   animation-range: cover 0% cover 30%;
   justify-items: center;
+  display: grid;
   margin-bottom: 180px;
 
   h1 {
@@ -417,6 +421,7 @@ body {
   width: 100%;
   background: #292929;
   padding-top: 20px;
+  display: grid;
 
   .titre {
     font-family: "header";
@@ -690,13 +695,14 @@ hr {
 .prrojets-contenu {
   justify-items: center;
   width: 100%;
+  display: grid;
 
   .h1 {
     font-family: 'header';
     color: var(--pacific-blue);
     font-size: 90px;
-    margin-bottom: 120px;
-
+    margin-bottom: 50px;
+    margin-top: 240px;
     animation: scroll linear;
     animation-timeline: view();
     animation-range: cover 0% cover 30%;
@@ -714,6 +720,7 @@ hr {
     @media  screen and (max-width: 1200px) {
       width: 100vw;
       justify-items: center;
+      display: grid;
     }
 
     .card-pro {
@@ -802,3 +809,7 @@ hr {
     }
   }
 }
+
+
+
+// CONTACTS
