@@ -51,18 +51,18 @@ body {
   display: inline-block;
   width: 20px;
   height: 20px;
-  background: var(--pacific-blue);
+  background: yellowgreen;
   border-radius: 100%;
-  box-shadow: 0 0 10px 0 var(--pacific-blue);
+  box-shadow: 0 0 10px 0 yellowgreen;
   margin-left: 10px;
   animation: shadow 1s ease-in-out infinite alternate;
 }
 @keyframes shadow {
   0% {
-    box-shadow: 0 0 10px 0 var(--pacific-blue);
+    box-shadow: 0 0 10px 0 yellowgreen;
   }
   100% {
-    box-shadow: 0 0 10px 2px var(--pacific-blue);
+    box-shadow: 0 0 10px 2px yellowgreen;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -248,7 +248,7 @@ body {
   padding-bottom: 100px;
 }
 .about-contenu .about {
-  width: 1600px;
+  width: 1400px;
 }
 @media screen and (max-width: 1200px) {
   .about-contenu .about {
@@ -259,10 +259,10 @@ body {
   font-family: "header";
   font-size: 90px;
   margin-left: 20px;
-  color: var(--pacific-blue);
+  color: yellowgreen;
   animation: scroll linear;
   animation-timeline: view();
-  animation-range: cover 0% cover 30%;
+  animation-range: cover 0% cover 20%;
 }
 @media screen and (max-width: 1200px) {
   .about-contenu .about h1 {
@@ -286,7 +286,7 @@ body {
 @keyframes scroll {
   0% {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(80px);
   }
   100% {
     opacity: 1;
@@ -297,7 +297,7 @@ body {
 .skills-contenu {
   animation: scroll linear;
   animation-timeline: view();
-  animation-range: cover 0% cover 30%;
+  animation-range: cover 0% cover 20%;
   justify-items: center;
   display: grid;
   margin-bottom: 180px;
@@ -350,11 +350,12 @@ body {
   background: #292929;
   text-align: center;
   justify-items: center;
+  display: grid;
   justify-content: center;
   font-size: 25px;
   animation: scroll linear;
   animation-timeline: view();
-  animation-range: cover 0% cover 30%;
+  animation-range: cover 0% cover 20%;
 }
 @media screen and (max-width: 1200px) {
   .skills-contenu .skills .box {
@@ -410,12 +411,12 @@ body {
 .parcours-contenu .titre {
   font-family: "header";
   font-size: 45px;
-  color: #639fab;
+  color: yellowgreen;
   margin-right: 1000px;
   margin-bottom: 200px;
   animation: scroll linear;
   animation-timeline: view();
-  animation-range: cover 0% cover 30%;
+  animation-range: cover 0% cover 20%;
 }
 @media screen and (max-width: 1200px) {
   .parcours-contenu .titre {
@@ -449,7 +450,7 @@ body {
   width: 500px;
   animation: scroll linear;
   animation-timeline: view();
-  animation-range: cover 0% cover 30%;
+  animation-range: cover 0% cover 20%;
 }
 @media screen and (max-width: 1200px) {
   .parcours-contenu .parcours .box-left {
@@ -493,7 +494,7 @@ body {
   margin-top: 220px;
   animation: scroll linear;
   animation-timeline: view();
-  animation-range: cover 0% cover 30%;
+  animation-range: cover 0% cover 20%;
 }
 @media screen and (max-width: 1200px) {
   .parcours-contenu .parcours .box-right {
@@ -570,7 +571,7 @@ body {
   margin-top: 60px;
   animation: scroll linear;
   animation-timeline: view();
-  animation-range: cover 0% cover 30%;
+  animation-range: cover 0% cover 20%;
 }
 @media screen and (max-width: 1200px) {
   .parcours-contenu2 .parcours2 .box-left2 {
@@ -613,7 +614,7 @@ body {
   margin-top: 280px;
   animation: scroll linear;
   animation-timeline: view();
-  animation-range: cover 0% cover 30%;
+  animation-range: cover 0% cover 20%;
 }
 @media screen and (max-width: 1200px) {
   .parcours-contenu2 .parcours2 .box-right2 {
@@ -666,6 +667,7 @@ body {
 
 hr {
   opacity: 0.4;
+  color: yellowgreen;
 }
 @media screen and (max-width: 1200px) {
   hr {
@@ -686,7 +688,7 @@ hr {
   margin-top: 240px;
   animation: scroll linear;
   animation-timeline: view();
-  animation-range: cover 0% cover 30%;
+  animation-range: cover 0% cover 20%;
 }
 @media screen and (max-width: 1200px) {
   .prrojets-contenu .h1 {
@@ -713,7 +715,7 @@ hr {
   width: 1200px;
   animation: scroll linear;
   animation-timeline: view();
-  animation-range: cover 0% cover 30%;
+  animation-range: cover 0% cover 20%;
 }
 @media screen and (max-width: 1200px) {
   .prrojets-contenu .projets .card-pro {
@@ -763,7 +765,7 @@ hr {
   color: rgba(255, 255, 255, 0.3294117647);
 }
 .prrojets-contenu .projets .card-pro .statut a {
-  color: #1c5d99;
+  color: yellowgreen;
   text-decoration: none;
 }
 .prrojets-contenu .projets .card-pro .statut a:hover {
@@ -775,6 +777,7 @@ hr {
 @media screen and (max-width: 1200px) {
   .prrojets-contenu .projets .card-pro .hr {
     display: block;
+    color: rgba(255, 255, 255, 0.3294117647);
   }
 }
 .prrojets-contenu .projets .card-pro img {
@@ -784,5 +787,247 @@ hr {
 @media screen and (max-width: 1200px) {
   .prrojets-contenu .projets .card-pro img {
     width: 90vw;
+  }
+}
+
+.contacts-contenu {
+  width: 100%;
+  background: #292929;
+  justify-items: center;
+  display: grid;
+  margin-top: 240px;
+  padding-bottom: 140px;
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu {
+    width: 100vw;
+    margin-top: 200px;
+    padding-bottom: 80px;
+  }
+}
+.contacts-contenu .h1 {
+  font-family: "header";
+  color: yellowgreen;
+  font-size: 90px;
+  margin-left: -600px;
+  transform: translateY(-120px);
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .h1 {
+    font-size: 30px;
+    margin-bottom: 160px;
+    margin-left: 0px;
+    transform: translateY(-35px) translateX(-40px);
+  }
+}
+.contacts-contenu .contacts {
+  display: flex;
+  width: 1400px;
+  gap: 200px;
+  margin-top: -130px;
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .contacts {
+    flex-direction: column;
+    width: 100vw;
+    justify-items: center;
+    display: grid;
+    gap: 10px;
+  }
+}
+.contacts-contenu .contacts .left {
+  display: grid;
+  flex-direction: column;
+  background: var(--carbon-black);
+  padding: 5px;
+  width: 600px;
+  justify-items: center;
+  border-radius: 5px;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .contacts .left {
+    width: 90vw;
+  }
+}
+.contacts-contenu .contacts .left input {
+  background: #292929;
+  border: none;
+  padding: 10px 10px;
+  font-size: 25px;
+  font-family: "text";
+  margin-bottom: 25px;
+  color: var(--white);
+  width: 90%;
+  border-radius: 2px;
+  outline: none;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .contacts .left input {
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+}
+.contacts-contenu .contacts .left input::placeholder {
+  opacity: 0.4;
+}
+.contacts-contenu .contacts .left textarea {
+  background: #292929;
+  border: none;
+  border-radius: 2px;
+  width: 90%;
+  height: 150px;
+  font-size: 25px;
+  padding: 10px 10px;
+  color: var(--white);
+  font-family: "text";
+  outline: none;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .contacts .left textarea {
+    font-size: 12px;
+    height: 80px;
+    padding: 5px 10px;
+  }
+}
+.contacts-contenu .contacts .left textarea::placeholder {
+  opacity: 0.4;
+}
+.contacts-contenu .contacts .left .btn-submit {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  background: yellowgreen;
+  font-family: "text";
+  color: var(--carbon-black);
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 80%;
+  justify-content: center;
+  border: none;
+  font-weight: bolder;
+  border-radius: 3px;
+  height: 40px;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .contacts .left .btn-submit {
+    font-size: 12px;
+    height: 20px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-left: -55px;
+  }
+}
+.contacts-contenu .contacts .left .btn-submit .img {
+  margin-left: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .contacts .left .btn-submit .img {
+    width: 15px;
+  }
+}
+.contacts-contenu .contacts .left .btn-submit:hover {
+  background: #6ea206;
+  transition: all 0.2s linear;
+}
+.contacts-contenu .contacts .left p {
+  font-size: 25px;
+  transform: translateY(-43px) translateX(-160px);
+  margin-bottom: -10px;
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .contacts .left p {
+    font-size: 15px;
+    transform: translateY(-27px) translateX(-110px);
+    margin-bottom: 0px;
+  }
+}
+.contacts-contenu .contacts .left p span {
+  color: yellowgreen;
+  margin-left: -5px;
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .contacts .right {
+    margin-left: -190px;
+  }
+}
+.contacts-contenu .contacts .right {
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
+.contacts-contenu .contacts .right .p {
+  font-family: "header";
+  font-size: 52px;
+  color: yellowgreen;
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .contacts .right .p {
+    font-size: 22px;
+  }
+}
+.contacts-contenu .contacts .right .pi {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  animation: scroll linear;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .contacts .right .pi {
+    font-size: 12px;
+  }
+}
+.contacts-contenu .contacts .right .pi .img {
+  filter: invert(100);
+  width: 30px;
+  border: solid 1px black;
+  padding: 5px;
+  border-radius: 100%;
+  margin-right: 20px;
+  transform: translateY(-5px);
+}
+@media screen and (max-width: 1200px) {
+  .contacts-contenu .contacts .right .pi .img {
+    width: 15px;
+    transform: translateY(-2px);
+  }
+}
+
+.footer-contenu {
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+.footer-contenu .footer {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .footer-contenu .footer {
+    width: 100vw;
+  }
+}
+.footer-contenu .footer p {
+  opacity: 0.3;
+  margin-bottom: -5px;
+}
+@media screen and (max-width: 1200px) {
+  .footer-contenu .footer p {
+    font-size: 9px;
   }
 }/*# sourceMappingURL=style.css.map */
