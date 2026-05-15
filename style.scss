@@ -297,11 +297,11 @@ body {
     @keyframes scroll {
       0% {
         opacity: 0;
-        translate: -60px 0;
+        transform: translateY(200px);
       }
       100% {
         opacity: 1;
-        translate: 0;
+        transform: translateY(0);
       }
     }
   }
@@ -557,6 +557,7 @@ body {
   width: 100%;
   background: #292929;
   padding-top: 20px;
+  display: grid;
 
   @media  screen and (max-width: 1200px) {
     padding-top: 0px;
