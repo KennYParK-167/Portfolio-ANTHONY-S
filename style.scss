@@ -1,15 +1,14 @@
-body {
+body,
+html {
   margin: 0;
   padding: 0;
   background: var(--carbon-black);
   color: var(--white);
   font-family: "text";
   width: 100%;
-}
-
-* {
   scroll-behavior: smooth;
 }
+
 
 :root {
   --carbon-black: #222222;
@@ -1065,3 +1064,4 @@ hr {
     }
   }
 }
+
