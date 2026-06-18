@@ -9,6 +9,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.content {
+  display: block;
+
+  @media screen and (min-width: 1200px) and (max-width: 1420px) {
+    display: none;
+  }
+}
 
 :root {
   --carbon-black: #222222;
