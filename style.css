@@ -266,6 +266,7 @@ html {
 @media screen and (max-width: 1200px) {
   .about-contenu .about {
     width: 90vw;
+    max-width: 500px;
   }
 }
 .about-contenu .about h1 {
@@ -319,7 +320,7 @@ html {
 @keyframes EnterLeft {
   0% {
     opacity: 0;
-    transform: translateX(-100px);
+    transform: translateX(-50px);
   }
   100% {
     opacity: 1;
@@ -474,6 +475,7 @@ html {
 @media screen and (max-width: 1200px) {
   .parcours-contenu .parcours {
     width: 100vw;
+    max-width: 420px;
     display: flex;
     flex-direction: column;
   }
@@ -496,7 +498,7 @@ html {
 @media screen and (max-width: 1200px) {
   .parcours-contenu .parcours .box-left {
     margin-top: 0px;
-    width: 100vw;
+    width: 100%;
   }
 }
 .parcours-contenu .parcours .box-left .haut {
@@ -507,7 +509,7 @@ html {
 @media screen and (max-width: 1200px) {
   .parcours-contenu .parcours .box-left .haut {
     gap: 5px;
-    width: 90vw;
+    width: 90%;
     margin-left: 20px;
   }
 }
@@ -541,7 +543,7 @@ html {
 @media screen and (max-width: 1200px) {
   .parcours-contenu .parcours .box-right {
     margin-top: 0px;
-    width: 100vw;
+    width: 100%;
   }
 }
 .parcours-contenu .parcours .box-right .haut {
@@ -552,7 +554,7 @@ html {
 @media screen and (max-width: 1200px) {
   .parcours-contenu .parcours .box-right .haut {
     gap: 5px;
-    width: 90vw;
+    width: 90%;
     margin-left: 20px;
   }
 }
@@ -597,6 +599,7 @@ html {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    max-width: 420px;
   }
 }
 .parcours-contenu2 .parcours2 .img {
@@ -618,7 +621,7 @@ html {
 @media screen and (max-width: 1200px) {
   .parcours-contenu2 .parcours2 .box-left2 {
     margin-top: 0px;
-    width: 100vw;
+    width: 100%;
   }
 }
 .parcours-contenu2 .parcours2 .box-left2 .haut2 {
@@ -629,7 +632,7 @@ html {
 @media screen and (max-width: 1200px) {
   .parcours-contenu2 .parcours2 .box-left2 .haut2 {
     gap: 10px;
-    width: 90vw;
+    width: 90%;
     margin-left: 20px;
   }
 }
@@ -647,6 +650,7 @@ html {
   .parcours-contenu2 .parcours2 .box-left2 .p {
     font-size: 12px;
     width: 90vw;
+    max-width: 420px;
     margin-top: -5px;
     margin-left: 20px;
   }
@@ -662,7 +666,7 @@ html {
 @media screen and (max-width: 1200px) {
   .parcours-contenu2 .parcours2 .box-right2 {
     margin-top: 0px;
-    width: 100vw;
+    width: 100%;
   }
 }
 .parcours-contenu2 .parcours2 .box-right2 .haut2 {
@@ -692,7 +696,7 @@ html {
 @media screen and (max-width: 1200px) {
   .parcours-contenu2 .parcours2 .box-right2 .p {
     font-size: 12px;
-    width: 90vw;
+    width: 90%;
     margin-top: -5px;
     margin-left: 20px;
   }
@@ -766,6 +770,12 @@ hr {
     padding: 5px;
     margin-bottom: 20px;
     border-radius: 10px;
+    max-width: 420px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .prrojets-contenu .projets .card-pro {
+    max-width: 90vw;
   }
 }
 .prrojets-contenu .projets .card-pro .id {
@@ -830,6 +840,12 @@ hr {
 @media screen and (max-width: 1200px) {
   .prrojets-contenu .projets .card-pro img {
     width: 90vw;
+    max-width: 420px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .prrojets-contenu .projets .card-pro img {
+    max-width: 90vw;
   }
 }
 
@@ -863,6 +879,14 @@ hr {
     transform: translateY(-35px) translateX(-40px);
   }
 }
+@media screen and (max-width: 380px) {
+  .contacts-contenu .h1 {
+    font-size: 30px;
+    margin-bottom: 160px;
+    margin-left: 0px;
+    transform: translateY(-35px);
+  }
+}
 .contacts-contenu .contacts {
   display: flex;
   width: 1400px;
@@ -892,6 +916,12 @@ hr {
 @media screen and (max-width: 1200px) {
   .contacts-contenu .contacts .left {
     width: 90vw;
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .contacts-contenu .contacts .left {
+    max-width: 90vw;
   }
 }
 .contacts-contenu .contacts .left input {
@@ -988,6 +1018,11 @@ hr {
     margin-bottom: 0px;
   }
 }
+@media screen and (max-width: 380px) {
+  .contacts-contenu .contacts .left p {
+    transform: translateY(-27px) translateX(-60px);
+  }
+}
 .contacts-contenu .contacts .left p span {
   color: yellowgreen;
   margin-left: -5px;
@@ -995,6 +1030,11 @@ hr {
 @media screen and (max-width: 1200px) {
   .contacts-contenu .contacts .right {
     margin-left: -190px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .contacts-contenu .contacts .right {
+    margin-left: -90px;
   }
 }
 .contacts-contenu .contacts .right {

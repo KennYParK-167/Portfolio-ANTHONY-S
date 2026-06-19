@@ -277,6 +277,7 @@ html {
 
     @media screen and (max-width: 1200px) {
       width: 90vw;
+      max-width: 500px;
     }
 
     h1 {
@@ -333,7 +334,7 @@ html {
     @keyframes EnterLeft {
         0% {
             opacity: 0;
-            transform: translateX(-100px);
+            transform: translateX(-50px);
         }
         100% {
             opacity: 1;
@@ -494,6 +495,7 @@ html {
 
     @media  screen and (max-width: 1200px) {
       width: 100vw;
+      max-width: 420px;
       display: flex;
       flex-direction: column;
     }
@@ -515,7 +517,7 @@ html {
 
       @media  screen and (max-width: 1200px) {
         margin-top: 0px;
-        width: 100vw;
+        width: 100%;
       }
 
       .haut {
@@ -525,7 +527,7 @@ html {
 
         @media  screen and (max-width: 1200px) {
           gap: 5px;
-          width: 90vw;
+          width: 90%;
           margin-left: 20px;
         }
         
@@ -561,7 +563,7 @@ html {
 
       @media  screen and (max-width: 1200px) {
         margin-top: 0px;
-        width: 100vw;
+        width: 100%;
       }
 
       .haut {
@@ -571,7 +573,7 @@ html {
 
         @media  screen and (max-width: 1200px) {
           gap: 5px;
-          width: 90vw;
+          width: 90%;
           margin-left: 20px;
         }
 
@@ -619,6 +621,7 @@ html {
       width: 100vw;
       display: flex;
       flex-direction: column;
+      max-width: 420px;
     }
 
 
@@ -640,7 +643,7 @@ html {
 
       @media  screen and (max-width: 1200px) {
         margin-top: 0px;
-        width: 100vw;
+        width: 100%;
       }
 
       .haut2 {
@@ -650,7 +653,7 @@ html {
 
         @media  screen and (max-width: 1200px) {
           gap: 10px;
-          width: 90vw;
+          width: 90%;
           margin-left: 20px;
         }
 
@@ -669,6 +672,7 @@ html {
         @media  screen and (max-width: 1200px) {
           font-size: 12px;
           width: 90vw;
+          max-width: 420px;
           margin-top: -5px;
           margin-left: 20px;
         }
@@ -685,7 +689,7 @@ html {
 
       @media  screen and (max-width: 1200px) {
         margin-top: 0px;
-        width: 100vw;
+        width: 100%;
       }
 
       .haut2 {
@@ -715,7 +719,7 @@ html {
 
         @media  screen and (max-width: 1200px) {
           font-size: 12px;
-          width: 90vw;
+          width: 90%;
           margin-top: -5px;
           margin-left: 20px;
         }
@@ -790,6 +794,11 @@ hr {
         padding: 5px;
         margin-bottom: 20px;
         border-radius: 10px;
+        max-width: 420px;
+      }
+      
+      @media screen and (max-width: 320px) {
+        max-width: 90vw;
       }
       
       .id {
@@ -856,6 +865,11 @@ hr {
 
         @media  screen and (max-width: 1200px) {
           width: 90vw;
+          max-width: 420px;
+        }
+
+        @media screen and (max-width: 320px) {
+          max-width: 90vw;
         }
       }
     }
@@ -892,6 +906,13 @@ hr {
       margin-left: 0px;
       transform: translateY(-35px) translateX(-40px);
     }
+
+    @media screen and (max-width: 380px) {
+      font-size: 30px;
+      margin-bottom: 160px;
+      margin-left: 0px;
+      transform: translateY(-35px);
+    }
   }
 
   .contacts {
@@ -908,6 +929,7 @@ hr {
       display: grid;
       gap: 10px;
     }
+ 
 
     .left {
       display: grid;
@@ -921,7 +943,12 @@ hr {
       animation-range: cover 0% contain 50%;
 
       @media  screen and (max-width: 1200px) {
-        width: 90vw
+        width: 90vw;
+        max-width: 320px;
+      }
+      
+      @media screen and (max-width: 320px) {
+        max-width: 90vw;
       }
 
       input {
@@ -1024,6 +1051,10 @@ hr {
           margin-bottom: 0px;
         }
 
+        @media screen and (max-width: 380px) {
+          transform: translateY(-27px) translateX(-60px);
+        }
+
         span {
           color: yellowgreen;
           margin-left: -5px;
@@ -1035,6 +1066,11 @@ hr {
       @media  screen and (max-width: 1200px) {
         margin-left: -190px;
       }
+
+      @media screen and (max-width: 380px) {
+        margin-left: -90px;
+      }
+      
       animation: EnterRight ease-in-out;
       animation-timeline: view();
       animation-range: cover 0% contain 50%;
