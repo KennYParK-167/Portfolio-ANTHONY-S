@@ -27,5 +27,4 @@ btnSubmit.addEventListener('click', () => {
 
   const mailtoLink = `mailto:${dest}?subject=${sujet}&body=${corps}`;
   const mailtoSend = window.open(mailtoLink);
-
 })
