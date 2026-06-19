@@ -202,6 +202,7 @@ html {
   font-family: "header";
   font-size: 140px;
   margin-bottom: -170px;
+  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 1200px) {
   .hero .top h1 {
@@ -213,6 +214,7 @@ html {
   display: block;
   font-size: 200px;
   color: var(--pacific-blue);
+  transition: all 0.3s ease-in-out;
 }
 @media screen and (max-width: 1200px) {
   .hero .top h1:nth-child(3) {
@@ -222,7 +224,6 @@ html {
 }
 .hero .top h1:hover {
   scale: 1.1;
-  transition: all 0.15s ease-in-out;
 }
 .hero .top .profil img {
   width: 450px;
@@ -267,9 +268,9 @@ html {
   font-size: 90px;
   margin-left: 20px;
   color: yellowgreen;
-  animation: scroll linear;
+  animation: scroll ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 45%;
 }
 @media screen and (max-width: 1200px) {
   .about-contenu .about h1 {
@@ -279,9 +280,9 @@ html {
 .about-contenu .about p {
   font-size: 25px;
   margin-top: -20px;
-  animation: scroll linear;
+  animation: scroll ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 45%;
 }
 @media screen and (max-width: 1200px) {
   .about-contenu .about p {
@@ -293,18 +294,46 @@ html {
 @keyframes scroll {
   0% {
     opacity: 0;
-    transform: translateX(-80px) translateY(200px);
+    transform: translateY(300px);
   }
   100% {
     opacity: 1;
-    transform: translateX(0) translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes EnterRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes EnterLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes EnterOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 .skills-contenu {
-  animation: scroll linear;
+  animation: scroll ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 45%;
   justify-items: center;
   display: grid;
   margin-bottom: 180px;
@@ -360,9 +389,9 @@ html {
   display: grid;
   justify-content: center;
   font-size: 25px;
-  animation: scroll linear;
+  animation: scroll ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 40%;
 }
 @media screen and (max-width: 1200px) {
   .skills-contenu .skills .box {
@@ -421,9 +450,9 @@ html {
   color: yellowgreen;
   margin-right: 1000px;
   margin-bottom: 200px;
-  animation: scroll linear;
+  animation: scroll ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 45%;
 }
 @media screen and (max-width: 1200px) {
   .parcours-contenu .titre {
@@ -455,9 +484,9 @@ html {
 }
 .parcours-contenu .parcours .box-left {
   width: 500px;
-  animation: scroll linear;
+  animation: EnterLeft ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 50%;
 }
 @media screen and (max-width: 1200px) {
   .parcours-contenu .parcours .box-left {
@@ -499,9 +528,10 @@ html {
 .parcours-contenu .parcours .box-right {
   width: 500px;
   margin-top: 220px;
-  animation: scroll linear;
+  animation: EnterRight ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 50%;
+  overflow: hidden;
 }
 @media screen and (max-width: 1200px) {
   .parcours-contenu .parcours .box-right {
@@ -576,9 +606,9 @@ html {
 .parcours-contenu2 .parcours2 .box-left2 {
   width: 500px;
   margin-top: 60px;
-  animation: scroll linear;
+  animation: EnterLeft ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 50%;
 }
 @media screen and (max-width: 1200px) {
   .parcours-contenu2 .parcours2 .box-left2 {
@@ -619,9 +649,10 @@ html {
 .parcours-contenu2 .parcours2 .box-right2 {
   width: 500px;
   margin-top: 280px;
-  animation: scroll linear;
+  animation: EnterRight ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 50%;
+  overflow: hidden;
 }
 @media screen and (max-width: 1200px) {
   .parcours-contenu2 .parcours2 .box-right2 {
@@ -693,9 +724,9 @@ hr {
   font-size: 90px;
   margin-bottom: 50px;
   margin-top: 240px;
-  animation: scroll linear;
+  animation: scroll ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 65%;
 }
 @media screen and (max-width: 1200px) {
   .prrojets-contenu .h1 {
@@ -720,9 +751,9 @@ hr {
   padding: 10px;
   margin-bottom: 40px;
   width: 1200px;
-  animation: scroll linear;
+  animation: EnterOpacity ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 20%;
 }
 @media screen and (max-width: 1200px) {
   .prrojets-contenu .projets .card-pro {
@@ -849,10 +880,9 @@ hr {
   padding: 5px;
   width: 600px;
   justify-items: center;
-  border-radius: 5px;
-  animation: scroll linear;
+  animation: EnterOpacity ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 50%;
 }
 @media screen and (max-width: 1200px) {
   .contacts-contenu .contacts .left {
@@ -870,9 +900,6 @@ hr {
   width: 90%;
   border-radius: 2px;
   outline: none;
-  animation: scroll linear;
-  animation-timeline: view();
-  animation-range: cover 0% cover 20%;
 }
 @media screen and (max-width: 1200px) {
   .contacts-contenu .contacts .left input {
@@ -895,9 +922,6 @@ hr {
   color: var(--white);
   font-family: "text";
   outline: none;
-  animation: scroll linear;
-  animation-timeline: view();
-  animation-range: cover 0% cover 20%;
 }
 @media screen and (max-width: 1200px) {
   .contacts-contenu .contacts .left textarea {
@@ -924,9 +948,7 @@ hr {
   font-weight: bolder;
   border-radius: 3px;
   height: 40px;
-  animation: scroll linear;
-  animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  transition: all 0.3s linear;
 }
 @media screen and (max-width: 1200px) {
   .contacts-contenu .contacts .left .btn-submit {
@@ -947,12 +969,12 @@ hr {
 }
 .contacts-contenu .contacts .left .btn-submit:hover {
   background: #6ea206;
-  transition: all 0.2s linear;
 }
 .contacts-contenu .contacts .left p {
   font-size: 25px;
   transform: translateY(-43px) translateX(-160px);
   margin-bottom: -10px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1200px) {
   .contacts-contenu .contacts .left p {
@@ -971,9 +993,9 @@ hr {
   }
 }
 .contacts-contenu .contacts .right {
-  animation: scroll linear;
+  animation: EnterRight ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 50%;
 }
 .contacts-contenu .contacts .right .p {
   font-family: "header";
@@ -989,9 +1011,9 @@ hr {
   display: flex;
   align-items: center;
   font-size: 28px;
-  animation: scroll linear;
+  animation: EnterRight ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 25%;
 }
 @media screen and (max-width: 1200px) {
   .contacts-contenu .contacts .right .pi {

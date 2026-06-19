@@ -208,6 +208,7 @@ html {
       font-family: "header";
       font-size: 140px;
       margin-bottom: -170px;
+      transition: all 0.3s ease-in-out;
 
       @media screen and (max-width: 1200px) {
         font-size: 35px;
@@ -218,6 +219,7 @@ html {
       display: block;
       font-size: 200px;
       color: var(--pacific-blue);
+      transition: all 0.3s ease-in-out;
       // z-index: -1;
 
       @media screen and (max-width: 1200px) {
@@ -225,9 +227,9 @@ html {
         margin-bottom: -15px;
       }
     }
+
     h1:hover {
       scale: 1.1;
-      transition: all 0.15s ease-in-out;
     }
 
     .profil {
@@ -277,9 +279,9 @@ html {
       font-size: 90px;
       margin-left: 20px;
       color: yellowgreen;
-      animation: scroll linear;
+      animation: scroll ease-in-out;
       animation-timeline: view();
-      animation-range: cover 0% cover 20%;
+      animation-range: cover 0% contain 45%;
 
       @media screen and (max-width: 1200px) {
         font-size: 30px;
@@ -289,9 +291,9 @@ html {
     p {
       font-size: 25px;
       margin-top: -20px;
-      animation: scroll linear;
+      animation: scroll ease-in-out;
       animation-timeline: view();
-      animation-range: cover 0% cover 20%;
+      animation-range: cover 0% contain 45%;
 
       @media screen and (max-width: 1200px) {
         font-size: 12px;
@@ -303,24 +305,57 @@ html {
     @keyframes scroll {
       0% {
         opacity: 0;
-        transform: translateX(-80px) translateY(200px);
+        transform: translateY(300px);
       }
       100% {
         opacity: 1;
-        transform: translateX(0) translateY(0);
+        transform: translateY(0);
       }
+    }
+
+
+    @keyframes EnterRight {
+        from {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes EnterLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    @keyframes EnterOpacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
   }
 }
 
 // SKILLS
 .skills-contenu {
-  animation: scroll linear;
+  animation: scroll ease-in-out;
   animation-timeline: view();
-  animation-range: cover 0% cover 20%;
+  animation-range: cover 0% contain 45%;
   justify-items: center;
   display: grid;
   margin-bottom: 180px;
+  
 
   h1 {
     font-size: 90px;
@@ -373,9 +408,9 @@ html {
       display: grid;
       justify-content: center;
       font-size: 25px;
-      animation: scroll linear;
+      animation: scroll ease-in-out;
       animation-timeline: view();
-      animation-range: cover 0% cover 20%;
+      animation-range: cover 0% contain 40%;
 
       @media screen and (max-width: 1200px) {
         font-size: 10px;
@@ -436,9 +471,9 @@ html {
     color: yellowgreen;
     margin-right: 1000px;
     margin-bottom: 200px;
-    animation: scroll linear;
+    animation: scroll ease-in-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 20%;
+    animation-range: cover 0% contain 45%;
 
     @media  screen and (max-width: 1200px) {
       font-size: 18px;
@@ -469,9 +504,9 @@ html {
 
     .box-left {
       width: 500px;
-      animation: scroll linear;
+      animation: EnterLeft ease-in-out;
       animation-timeline: view();
-      animation-range: cover 0% cover 20%;
+      animation-range: cover 0% contain 50%;
 
       @media  screen and (max-width: 1200px) {
         margin-top: 0px;
@@ -514,9 +549,10 @@ html {
     .box-right {
       width: 500px;
       margin-top: 220px;
-      animation: scroll linear;
+      animation: EnterRight ease-in-out;
       animation-timeline: view();
-      animation-range: cover 0% cover 20%;
+      animation-range: cover 0% contain 50%;
+      overflow: hidden;
 
       @media  screen and (max-width: 1200px) {
         margin-top: 0px;
@@ -593,9 +629,9 @@ html {
     .box-left2 {
       width: 500px;
       margin-top: 60px;
-      animation: scroll linear;
+      animation: EnterLeft ease-in-out;
       animation-timeline: view();
-      animation-range: cover 0% cover 20%;
+      animation-range: cover 0% contain 50%;
 
       @media  screen and (max-width: 1200px) {
         margin-top: 0px;
@@ -637,9 +673,10 @@ html {
     .box-right2 {
       width: 500px;
       margin-top: 280px;
-      animation: scroll linear;
+      animation: EnterRight ease-in-out;
       animation-timeline: view();
-      animation-range: cover 0% cover 20%;
+      animation-range: cover 0% contain 50%;
+      overflow: hidden;
 
       @media  screen and (max-width: 1200px) {
         margin-top: 0px;
@@ -712,9 +749,9 @@ hr {
     font-size: 90px;
     margin-bottom: 50px;
     margin-top: 240px;
-    animation: scroll linear;
+    animation: scroll ease-in-out;
     animation-timeline: view();
-    animation-range: cover 0% cover 20%;
+    animation-range: cover 0% contain 65%;
 
     @media  screen and (max-width: 1200px) {
       font-size: 35px;
@@ -738,10 +775,10 @@ hr {
       padding: 10px;
       margin-bottom: 40px;
       width: 1200px;
-      // SCROLL ANIMATION
-      animation: scroll linear;
+      //  ANIMATION
+      animation: EnterOpacity ease-in-out;
       animation-timeline: view();
-      animation-range: cover 0% cover 20%;
+      animation-range: cover 0% contain 20%;
 
       @media  screen and (max-width: 1200px) {
         width: 90vw;
@@ -874,10 +911,9 @@ hr {
       padding: 5px;
       width: 600px;
       justify-items: center;
-      border-radius: 5px;
-      animation: scroll linear;
+      animation: EnterOpacity ease-in-out;
       animation-timeline: view();
-      animation-range: cover 0% cover 20%;
+      animation-range: cover 0% contain 50%;
 
       @media  screen and (max-width: 1200px) {
         width: 90vw
@@ -894,9 +930,6 @@ hr {
         width: 90%;
         border-radius: 2px;
         outline: none;
-        animation: scroll linear;
-        animation-timeline: view();
-        animation-range: cover 0% cover 20%;
 
         @media  screen and (max-width: 1200px) {
           font-size: 12px;
@@ -920,9 +953,6 @@ hr {
         color: var(--white);
         font-family: 'text';
         outline: none;
-        animation: scroll linear;
-        animation-timeline: view();
-        animation-range: cover 0% cover 20%;
 
         @media  screen and (max-width: 1200px) {
           font-size: 12px;
@@ -951,9 +981,7 @@ hr {
         font-weight: bolder;
         border-radius: 3px;
         height: 40px;
-        animation: scroll linear;
-        animation-timeline: view();
-        animation-range: cover 0% cover 20%;
+        transition: all 0.3s linear;
 
         @media  screen and (max-width: 1200px) {
           font-size: 12px;
@@ -976,13 +1004,14 @@ hr {
 
       .btn-submit:hover {
         background: #6ea206;
-        transition: all 0.2s linear;
+        
       }
 
       p {
         font-size: 25px;
         transform: translateY(-43px) translateX(-160px);
         margin-bottom: -10px;
+        overflow: hidden;
 
         @media  screen and (max-width: 1200px) {
           font-size: 15px;
@@ -1001,9 +1030,9 @@ hr {
       @media  screen and (max-width: 1200px) {
         margin-left: -190px;
       }
-      animation: scroll linear;
+      animation: EnterRight ease-in-out;
       animation-timeline: view();
-      animation-range: cover 0% cover 20%;
+      animation-range: cover 0% contain 50%;
 
       .p {
         font-family: 'header';
@@ -1019,9 +1048,9 @@ hr {
         display: flex;
         align-items: center;
         font-size: 28px;
-        animation: scroll linear;
+        animation: EnterRight  ease-in-out;
         animation-timeline: view();
-        animation-range: cover 0% cover 20%;
+        animation-range: cover 0% contain 25%;
 
         @media  screen and (max-width: 1200px) {
           font-size: 12px;
