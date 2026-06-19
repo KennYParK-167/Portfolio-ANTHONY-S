@@ -17,7 +17,7 @@ html {
 .content {
   display: block;
 }
-@media screen and (min-width: 1200px) and (max-width: 1420px) {
+@media screen and (min-width: 470px) and (max-width: 1390px) {
   .content {
     display: none;
   }
